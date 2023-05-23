@@ -1,0 +1,45 @@
+
+.header{
+    height: 95vh;
+    background-image: linear-gradient(to right bottom, rgba(39, 180, 133,0.8),rgba(126, 213, 111,0.8)),
+    url(https://cdn.pixabay.com/photo/2015/01/28/23/35/hills-615429_960_720.jpg);
+
+   
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
+  //  clip-path: polygon(0 0, 100% 0 , 100% 75vh, 0 100%);
+  //  -webkit-clip-path: polygon(0 0, 100% 0 , 100% 75vh, 0 100%);
+   
+   @include clipPath;
+  @include atCenter;
+   position: relative;
+   text-align: center;
+}
+
+
+.h1{
+
+  color: $color-grey-dark1;
+   text-align: center;
+   text-transform: uppercase;
+   
+
+  &-main{  // pri-heading-main
+display: block;
+font-size: 3.75rem;  
+font-weight: 200;
+letter-spacing: 20px;
+animation: moveInleft 1s ease-in-out ;
+}
+
+
+  &-main-sub{  // secondary-heading-sub
+display: block;
+font-size: 1.25rem;
+font-weight: 100;
+letter-spacing: 10px;
+margin-bottom: 50px;  
+animation: moveInright 1s ease-in-out ;
+}
+}

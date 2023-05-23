@@ -1,0 +1,24 @@
+
+
+::selection{
+    background-color: $color-primary-dark;
+    color: $color-grey-dark1;
+}
+
+ul{
+ list-style: none;
+ text-decoration: none;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+.mb-80{
+    margin-bottom: 5rem;
+}
