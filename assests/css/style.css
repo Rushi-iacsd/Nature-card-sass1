@@ -81,7 +81,7 @@ a:link, a:visited {
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   text-align: center; }
 
 .paragraph {
@@ -289,6 +289,73 @@ a:link, a:visited {
       font-size: 4rem;
       font-weight: 100; }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .2;
+  overflow: hidden;
+  z-index: -1; }
+  .bg-video-content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.story {
+  width: 101%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 6rem;
+  border-radius: .3rem;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  transform: skewX(-10deg);
+  -webkit-transform: skewX(-10deg);
+  font-size: 1.4rem;
+  position: relative; }
+  .story > * {
+    transform: skewX(10deg); }
+  .story-shape {
+    width: 11rem;
+    height: 11rem;
+    float: left;
+    clip-path: circle(45% at 45% 45%);
+    shape-outside: circle(50% at 50% 50%);
+    margin-right: 3rem; }
+  .story-img {
+    height: 100%;
+    object-fit: cover;
+    transform: translateX(-3rem) scale(1.4);
+    -webkit-transform: translateX(-3rem) scale(1.4);
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    backface-visibility: hidden;
+    outline: none;
+    overflow: hidden; }
+  .story-caption {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 115%);
+    -webkit-transform: translate(-50%, 115%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    opacity: 0;
+    backface-visibility: hidden; }
+  .story:hover, .story-caption {
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    opacity: 1; }
+  .story:hover, .story-img {
+    transform: translateX(-3rem) scale(1);
+    -webkit-transform: translateX(-3rem) scale(1);
+    filter: blur(3px) brightness(80%); }
+
 .container {
   max-width: 1140px;
   margin: 0 auto; }
@@ -366,3 +433,7 @@ a:link, a:visited {
   padding: 250px 0 150px;
   background-color: #f7f7f7;
   margin-top: -100px; }
+
+.section-stories {
+  padding: 15rem 0;
+  position: relative; }
