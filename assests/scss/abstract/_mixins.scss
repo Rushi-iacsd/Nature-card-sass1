@@ -28,3 +28,11 @@ clip-path: polygon(0 0, 100% 0 , 100% 85%, 0 100%);
 @mixin boxShadow2{
   boxshadow: 0 0.5rem 1rem rgba($color-dark, .2);
 }
+
+
+@mixin atPositionCenter{
+  position: absolute;
+  top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
